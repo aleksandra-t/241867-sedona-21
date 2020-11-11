@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Корбакова](https://up.htmlacademy.ru/adaptive/21/user/241867).
-* Наставник: `Неизвестно`.
+* Наставник: Ирина Малиновская.
 
 ---
 
