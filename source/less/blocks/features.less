@@ -1,0 +1,51 @@
+.features {
+  outline: 2px solid blue;
+  padding-top: 32px;
+}
+
+.features__slogan {
+  color: @color-title;
+  .font(18px; 700);
+}
+
+.features__list {
+  .list-style-none;
+}
+
+.features__advices-list {
+  .list-style-none;
+}
+
+.features__item-text--background-first {
+  background-color: @bg-color-first;
+  color: @color-main-second;
+}
+
+.features__item--background-second {
+  background-color: @bg-color-second;
+}
+
+.features__item-text--background-first .features__item-title {
+  color: @color-main-second;
+}
+
+.features__item-title {
+  margin: 0;
+  padding: 0;
+  color: @color-title;
+  .font(18px; 700);
+}
+
+.features__item-number {
+  .font(@line-height: 21px);
+}
+
+.features__item-description {
+  padding: 0;
+  margin: 0;
+  .font(@line-height: 21px);
+}
+
+.features__item-photo {
+  display: block;
+}

@@ -1,0 +1,22 @@
+.main-navigation__list {
+  .list-style-none;
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  background-color: @bg-color-first;
+  text-align: center;
+  color: @color-main-second;
+  cursor: pointer;
+  display: block;
+  .font(18px; 700; 40px);
+
+  &:hover {
+    background-color: @bg-color-button-hover;
+  }
+
+  &:active {
+    background-color: @bg-color-button-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
