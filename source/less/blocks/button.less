@@ -1,0 +1,24 @@
+.button {
+  text-decoration: none;
+  color: @color-main-second;
+  .font(21px; 700);
+  background-color: @bg-color-first;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @bg-color-button-hover;
+  }
+
+  &:active {
+    background-color: @bg-color-button-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @bg-color-button-disabled;
+  }
+}
