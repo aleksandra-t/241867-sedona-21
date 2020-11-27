@@ -1,15 +1,42 @@
 .page-footer {
   padding-top: 38px;
   padding-bottom: 23px;
+  padding-left: 84px;
+  padding-right: 85px;
   outline: 2px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
 }
 
 .page-footer__link {
   text-decoration: none;
   color: @color-title;
   .font(21px; 700);
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 36px;
+  }
+
 }
 
 .page-footer__social {
   .list-style-none;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 40px;
+  }
 }

@@ -1,5 +1,17 @@
 .main-navigation__list {
   .list-style-none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.main-navigation__toggle {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__link {
@@ -18,5 +30,43 @@
   &:active {
     background-color: @bg-color-button-active;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    color: @color-title;
+    .font(inherit; 700);
+
+    &:hover {
+      color: @color-hover;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: @color-title;
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-navigation__item {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
   }
 }

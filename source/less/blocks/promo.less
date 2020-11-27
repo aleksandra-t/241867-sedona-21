@@ -1,15 +1,26 @@
 .promo {
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../../img/intro-triangle.svg"),
+  url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-color: @bg-color-first;
   outline: 2px solid green;
   padding-top: 53px;
   padding-bottom: 67px;
+  background-size: 1200px, cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/intro-triangle.svg"),
+    url("../../img/back-desktop.jpg");
+  }
 }
 
 .promo--index-page {
   padding-top: 90px;
   padding-bottom: 78px;
-  background-position: top center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
 }

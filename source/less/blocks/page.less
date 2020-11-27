@@ -16,6 +16,10 @@ img {
   height: auto;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .page__body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -24,7 +28,7 @@ img {
   color: @color-main;
   text-transform: uppercase;
   text-align: center;
-  background-color: @color-main-second;
+  background-color: @bg-color-third;
   margin: 0;
   padding: 0;
 }
@@ -32,4 +36,13 @@ img {
 .page__wrapper {
   width: 320px;
   margin: 0 auto;
+  background-color: @color-main-second;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
