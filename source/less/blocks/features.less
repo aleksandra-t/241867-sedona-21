@@ -19,6 +19,8 @@
 .features__list {
   .list-style-none;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: @mobile-width-only) {
     &::before {
@@ -56,8 +58,8 @@
 
 .features__item--background-second {
   background-color: @bg-color-second;
-  padding-top: 30px;
   padding: 24px;
+  padding-top: 30px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
@@ -126,11 +128,6 @@
   @media (min-width: @tablet-width) {
     width: 500px;
   }
-}
-
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .features__item-text {
