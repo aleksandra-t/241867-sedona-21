@@ -28,15 +28,16 @@
       width: 768px;
       height: 37px;
       position: absolute;
-      background-image: url("../../img/advices-triangle.svg");
+      background-image: url("../../img/feature-triangle.svg");
       background-repeat: no-repeat;
-      top: -10px;
+      top: -20px;
     }
   }
 }
 
 .features__advices-list {
-  .list-style-none;
+  list-style: none;
+  margin: 0;
 }
 
 .features__item-wrapper {
@@ -58,8 +59,8 @@
 
 .features__item--background-second {
   background-color: @bg-color-second;
-  padding: 24px;
   padding-top: 30px;
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
@@ -121,19 +122,13 @@
 }
 
 .features__intro {
-  width: 260px;
   margin: 0 auto;
   padding-bottom: 40px;
-
-  @media (min-width: @tablet-width) {
-    width: 500px;
-  }
 }
 
 .features__item-text {
-  box-sizing: border-box;
-  padding: 40px 10px;
-  padding-top: 57px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
