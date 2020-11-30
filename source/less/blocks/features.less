@@ -6,23 +6,73 @@
 .features__slogan {
   color: @color-title;
   .font(18px; 700);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
 }
 
 .features__list {
   .list-style-none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      content: "";
+      width: 768px;
+      height: 37px;
+      position: absolute;
+      background-image: url("../../img/feature-triangle.svg");
+      background-repeat: no-repeat;
+      top: -20px;
+    }
+  }
 }
 
 .features__advices-list {
-  .list-style-none;
+  list-style: none;
+  margin: 0;
+}
+
+.features__item-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    &--invert {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .features__item-text--background-first {
   background-color: @bg-color-first;
   color: @color-main-second;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .features__item--background-second {
   background-color: @bg-color-second;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 }
 
 .features__item-text--background-first .features__item-title {
@@ -30,10 +80,22 @@
 }
 
 .features__item-title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: @color-title;
   .font(18px; 700);
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 165px;
+    .font(21px; 700);
+  }
+}
+
+.features__item--background-second .features__item-title {
+  @media (min-width: @tablet-width) {
+    max-width: 130px;
+  }
 }
 
 .features__item-number {
@@ -42,10 +104,47 @@
 
 .features__item-description {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   .font(@line-height: 21px);
+  margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 275px;
+  }
 }
 
 .features__item-photo {
   display: block;
+}
+
+.features__intro {
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.features__item-text {
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.features__item-image {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }

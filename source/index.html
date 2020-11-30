@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -46,24 +47,26 @@
         </div>
         <section class="features">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <div class="features__intro">
+          <div class="features__intro page__container">
             <p class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <ul class="features__list">
-            <li class="features__item">
-              <div class="features__item-text features__item-text--background-first">
-                <h3 class="features__item-title">Настоящий городок</h3>
-                <span class="features__item-number">№1</span>
-                <p class="features__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <li class="features__item features__item--background-first">
+              <div class="features__item-wrapper">
+                <div class="features__item-text features__item-text--background-first page__container">
+                  <h3 class="features__item-title">Настоящий городок</h3>
+                  <span class="features__item-number">&ndash; №1 &ndash;</span>
+                  <p class="features__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <div class="features__item-image">
+                  <img class="features__item-photo" src="https://via.placeholder.com/800x260" alt="Фотография города">
+                </div>
               </div>
-              <div class="features__item-image">
-                <img class="features__item-photo" src="https://via.placeholder.com/520x260" width="520" height="260" alt="Фотография города">
-              </div>
-              <ul class="features__advices-list advices">
+              <ul class="features__advices-list advices page__container">
                 <li class="advices__item advices__item--living">
                   <h4 class="advices__title">Жилье</h4>
-                  <p class="advices__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <p class="advices__description">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
                 </li>
                 <li class="advices__item advices__item--souvenirs">
                   <h4 class="advices__title">Сувениры</h4>
@@ -75,34 +78,36 @@
                 </li>
               </ul>
             </li>
-            <li class="features__item">
-              <div class="features__item-text features__item-text--background-first">
-                <h3 class="features__item-title">Там есть Мост дьявола</h3>
-                <span class="features__item-number">№2</span>
-                <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              </div>
-              <div class="features__item-image">
-                <img class="features__item-photo" src="https://via.placeholder.com/520x260" width="520" height="260" alt="Фотография моста дьявола">
+            <li class="features__item features__item--background-first">
+              <div class="features__item-wrapper features__item-wrapper--invert">
+                <div class="features__item-text features__item-text--background-first page__container">
+                  <h3 class="features__item-title">Там есть Мост дьявола</h3>
+                  <span class="features__item-number">&ndash; №2 &ndash;</span>
+                  <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <div class="features__item-image">
+                  <img class="features__item-photo" src="https://via.placeholder.com/800x260" alt="Фотография моста дьявола">
+                </div>
               </div>
             </li>
-            <li class="features__item features__item--background-second">
+            <li class="features__item features__item--background-second page__container">
               <h3 class="features__item-title">Небольшая площадь</h3>
-              <span class="features__item-number">№3</span>
+              <span class="features__item-number">&ndash; №3 &ndash;</span>
               <p class="features__item-description">Все интересные места находятся очень близко</p>
             </li>
-            <li class="features__item features__item--background-second">
+            <li class="features__item features__item--background-second page__container">
               <h3 class="features__item-title">Красивая дорога</h3>
-              <span class="features__item-number">№4</span>
+              <span class="features__item-number">&ndash; №4 &ndash;</span>
               <p class="features__item-description">Ехать в седону из Лас-вегаса совсем не скучно!</p>
             </li>
-            <li class="features__item features__item--background-second">
+            <li class="features__item features__item--background-second page__container">
               <h3 class="features__item-title">Мало туристов</h3>
-              <span class="features__item-number">№5</span>
+              <span class="features__item-number">&ndash; №5 &ndash;</span>
               <p class="features__item-description">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </section>
-        <section class="booking">
+        <section class="booking page__container">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <b class="booking__title">Заинтересовались?</b>
           <p class="booking__instruction">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
