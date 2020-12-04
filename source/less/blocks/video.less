@@ -2,6 +2,16 @@
   padding-top: 32px;
   padding-bottom: 38px;
   outline: 2px solid blue;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .video__title {
@@ -19,5 +29,14 @@
 }
 
 .video-controls__button-wrapper {
+  display: flex;
   background-color: @bg-color-third;
+}
+
+.video-controls__button {
+  border: none;
+}
+
+.video-controls__button--replay {
+  margin-right: auto;
 }
