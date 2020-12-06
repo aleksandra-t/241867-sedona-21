@@ -2,21 +2,55 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 35px;
+  padding-top: 35px;
+  padding-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .advices__item {
   text-align: left;
   box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: -10px;
+    left: 6px;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @media (min-width: @tablet-width) {
+      top: 20px;
+      left: 50%;
+      width: 76px;
+      height: 74px;
+      margin-left: -39px;
+      background-position: center center;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 25px;
+    }
+  }
 
   @media (max-width: @mobile-width-only) {
-    padding-left: 48px;
+    padding-left: 56px;
   }
 
   @media (min-width: @tablet-width) {
-    width: 242px;
+    width: 215px;
     text-align: center;
+    padding-top: 120px;
 
     &:nth-child(2) {
       order: 1;
@@ -24,7 +58,32 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 350px;
+    width: 357px;
+    padding-top: 120px;
+  }
+}
+
+.advices__item--living::before {
+  background-image: url("../../img/icon-house.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/icon-house-tablet.svg");
+  }
+}
+
+.advices__item--souvenirs::before {
+  background-image: url("../../img/icon-gift.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/icon-gift-tablet.svg");
+  }
+}
+
+.advices__item--food::before {
+  background-image: url("../../img/icon-burger.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/icon-burger-tablet.svg");
   }
 }
 
@@ -33,19 +92,45 @@
   color: @color-title;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 70px;
+    .font(21px; 700);
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 100px;
+    margin-bottom: 24px;
   }
 }
 
 .advices__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  .font(@line-height: 21px);
+
+  .advices__br {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+
+      @media (min-width: @tablet-width) and (max-width: 1199px) {
+        display: block;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: @desktop-width) {
+        display: block;
+      }
+    }
+  }
 }

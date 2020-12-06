@@ -22,6 +22,10 @@ img {
   box-sizing: border-box;
 }
 
+.page {
+  height: 100%;
+}
+
 .page__body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -33,12 +37,16 @@ img {
   background-color: @bg-color-third;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .page__wrapper {
   width: 320px;
   margin: 0 auto;
   background-color: @color-main-second;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -46,6 +54,7 @@ img {
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    box-shadow: 0 5px 15px @shadow-color-page;
   }
 }
 

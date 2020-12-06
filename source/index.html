@@ -9,16 +9,13 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/102x84" width="102" height="84" alt="Седона">
-        </a>
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--active">
-              <a class="main-navigation__link">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--active">
                 Главная
               </a>
             </li>
@@ -39,81 +36,93 @@
             </li>
           </ul>
         </nav>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="../../img/logo.svg" width="102" height="84" alt="Седона">
+          </a>
+        </div>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Седона - город в Аризоне, поиск гостиниц</h1>
         <div class="promo promo--index-page">
-          <img class="promo__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Welcome to the gorgeous Sedona">
+          <img class="promo__image" src="https://via.placeholder.com/282x214" width="460" height="350" alt="Welcome to the gorgeous Sedona">
         </div>
         <section class="features">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <div class="features__intro page__container">
-            <p class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="features__slogan">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, <br>заслуживающий&nbsp;большего!</p>
             <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <ul class="features__list">
             <li class="features__item features__item--background-first">
               <div class="features__item-wrapper">
                 <div class="features__item-text features__item-text--background-first page__container">
-                  <h3 class="features__item-title">Настоящий городок</h3>
+                  <h3 class="features__item-title">Настоящий <br class="features__br">городок</h3>
                   <span class="features__item-number">&ndash; №1 &ndash;</span>
-                  <p class="features__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <p class="features__item-description">Седона не аттракцион для туристов,<br class="features__br--desktop"> там течет своя жизнь</p>
                 </div>
                 <div class="features__item-image">
-                  <img class="features__item-photo" src="https://via.placeholder.com/800x260" alt="Фотография города">
+                  <img class="features__item-photo" src="https://via.placeholder.com/320x260" alt="Фотография города">
                 </div>
               </div>
               <ul class="features__advices-list advices page__container">
                 <li class="advices__item advices__item--living">
                   <h4 class="advices__title">Жилье</h4>
-                  <p class="advices__description">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+                  <p class="advices__description">Рекомендуем пожить в настоящем<br class="advices__br--desktop">
+                    мотеле, все<br class="advices__br--tablet">
+                    как в кино!</p>
                 </li>
                 <li class="advices__item advices__item--souvenirs">
                   <h4 class="advices__title">Сувениры</h4>
-                  <p class="advices__description">Не только китайского, но и местного производства!</p>
+                  <p class="advices__description">Не только китайского,<br class="advices__br--desktop">
+                    но<br class="advices__br--tablet">
+                    и местного производства!</p>
                 </li>
                 <li class="advices__item advices__item--food">
                   <h4 class="advices__title">Еда</h4>
-                  <p class="advices__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="advices__description">Всегда заказывайте фирменный&nbsp;бургер,
+                    <br class="advices__br">
+                    вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="features__item features__item--background-first">
               <div class="features__item-wrapper features__item-wrapper--invert">
                 <div class="features__item-text features__item-text--background-first page__container">
-                  <h3 class="features__item-title">Там есть Мост дьявола</h3>
+                  <h3 class="features__item-title">Там есть<br class="features__br"> Мост дьявола</h3>
                   <span class="features__item-number">&ndash; №2 &ndash;</span>
-                  <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="features__item-description">Да, по нему можно<br class="features__br--tablet"> пройти!<br class="features__br--desktop"> Если вы осмелитесь,&nbsp;конечно</p>
                 </div>
                 <div class="features__item-image">
-                  <img class="features__item-photo" src="https://via.placeholder.com/800x260" alt="Фотография моста дьявола">
+                  <img class="features__item-photo" src="https://via.placeholder.com/320x260" alt="Фотография моста дьявола">
                 </div>
               </div>
             </li>
             <li class="features__item features__item--background-second page__container">
-              <h3 class="features__item-title">Небольшая площадь</h3>
+              <h3 class="features__item-title">Небольшая<br class="features__br"> площадь</h3>
               <span class="features__item-number">&ndash; №3 &ndash;</span>
-              <p class="features__item-description">Все интересные места находятся очень близко</p>
+              <p class="features__item-description">Все интересные места находятся очень<br class="features__br--desktop"> близко</p>
             </li>
             <li class="features__item features__item--background-second page__container">
-              <h3 class="features__item-title">Красивая дорога</h3>
+              <h3 class="features__item-title">Красивая<br class="features__br"> дорога</h3>
               <span class="features__item-number">&ndash; №4 &ndash;</span>
-              <p class="features__item-description">Ехать в седону из Лас-вегаса совсем не скучно!</p>
+              <p class="features__item-description">Ехать в седону из<br class="features__br--tablet"> Лас-вегаса совсем<br class="features__br"> не скучно!</p>
             </li>
             <li class="features__item features__item--background-second page__container">
-              <h3 class="features__item-title">Мало туристов</h3>
+              <h3 class="features__item-title">Мало<br class="features__br"> туристов</h3>
               <span class="features__item-number">&ndash; №5 &ndash;</span>
-              <p class="features__item-description">Большинство едет в гранд каньон и толпится там</p>
+              <p class="features__item-description">Большинство едет в<br class="features__br--tablet"> гранд каньон и<br class="features__br"> толпится там</p>
             </li>
           </ul>
         </section>
         <section class="booking page__container">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <b class="booking__title">Заинтересовались?</b>
-          <p class="booking__instruction">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+          <p class="booking__instruction">Укажите предполагаемые даты<br class="booking__br--mobile"> поездки,<br class="booking__br"> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <a class="booking__button button" href="#">Найти гостиницу</a>
         </section>
         <div class="map">
+          <iframe class="map__image--interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862995.88213355!2d-113.79955716713891!3d34.6810806069896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1607253857432!5m2!1sru!2sru" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <img class="map__image" src="https://via.placeholder.com/320x352" width="320" height="352" alt="Расположение Седоны на карте">
         </div>
       </main>
@@ -151,5 +160,6 @@
         </div>
       </footer>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

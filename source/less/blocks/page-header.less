@@ -1,15 +1,14 @@
-.page-header {
-  outline: 2px solid blue;
+.page-header__logo-wrapper {
+  height: 57px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+  }
 }
 
-.page-header__logo-image {
-  width: 102px;
-  height: 84px;
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.main-navigation {
-  outline: 2px solid green;
-  outline-offset: -2px;
+.page-header__logo {
+  position: relative;
 }
