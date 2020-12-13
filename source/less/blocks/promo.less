@@ -2,21 +2,31 @@
   background-image: url("../../img/intro-triangle.svg"),
     url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: 50% 100%;
   background-color: @bg-color-first;
-  padding-top: 53px;
-  padding-bottom: 67px;
-  background-size: 1200px, cover;
+  padding-top: 52px;
+  padding-bottom: 58px;
+  background-size: 901px auto, 900px auto;
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/intro-triangle.svg"),
       url("../../img/back-desktop.jpg");
+    padding-top: 95px;
+    padding-bottom: 107px;
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 102px;
+    padding-bottom: 112px;
+    background-size: 1200px auto;
   }
 }
 
 .promo--index-page {
   padding-top: 89px;
   padding-bottom: 76px;
+  background-size: 1200px, cover;
 
   @media (min-width: @tablet-width) {
     padding-top: 76px;
