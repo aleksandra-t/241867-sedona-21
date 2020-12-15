@@ -49,26 +49,14 @@
 
 .video__description {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   .font(@line-height: 24px);
   margin-bottom: 33px;
+  max-width: 275px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 80px;
-  }
-
-  .video__br--tablet {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
-  }
-
-  .video__br--mobile {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+    max-width: 445px;
   }
 }
 
