@@ -111,15 +111,17 @@
   padding-bottom: 27px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    background-color: @border-color-features-mobile;
-    bottom: 0;
-    left: 50%;
-    margin-left: -140px;
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      background-color: @border-color-features-mobile;
+      bottom: 0;
+      left: 50%;
+      margin-left: -140px;
+    }
   }
 
   @media (min-width: @tablet-width) {

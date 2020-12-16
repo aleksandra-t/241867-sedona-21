@@ -1,5 +1,4 @@
 .photos {
-  outline: 2px solid green;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -17,7 +16,20 @@
 .photos__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  .font(@line-height: 24px);
+
+  .photos__description-br {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .photos__list {
@@ -35,8 +47,22 @@
 
 .photos__item {
   text-align: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 12px;
+  position: relative;
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 1px;
+      background-color: @border-color;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     &:nth-child(3) .photos__item-caption {
@@ -59,17 +85,32 @@
 }
 
 .photos__item-caption {
+  padding-top: 12px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: @bg-color-third;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 33px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    color: @color-main-second;
+  }
+}
+
+.photos__item--big .photos__item-caption {
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
   }
 }
 
@@ -80,19 +121,56 @@
 .photos__title {
   .font(14px; 700; 24px);
   color: @color-title;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+
+  @media (min-width: @desktop-width) {
+    color: @color-main-second;
+  }
 }
 
 .photos__author {
   .font(@line-height: 24px);
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.photos__likes {
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+  }
 }
 
 .photos__like-button {
   cursor: pointer;
   border: none;
+  outline: none;
   background-color: transparent;
+  padding: 8px 13px 7px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    path {
+      fill: rgb(255, 255, 255);
+      opacity: 1;
+    }
+  }
 }
 
 .photos__like-count {
   .font(14px; 700; 24px);
   color: @color-title;
+
+  @media (min-width: @desktop-width) {
+    color: @color-main-second;
+  }
 }
