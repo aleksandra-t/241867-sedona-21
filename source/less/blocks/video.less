@@ -7,14 +7,14 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 52px;
-    padding-bottom: 42px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 57px;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
   }
 
   &::before {
@@ -68,6 +68,15 @@
 
 .video__content {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .video__controls {
@@ -130,7 +139,7 @@
 
   @media (min-width: @tablet-width) {
     top: 51%;
-    left: 204px;
+    left: 206px;
   }
 }
 
@@ -139,8 +148,10 @@
   background-color: @bg-color-third;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 18px;
   padding-right: 17px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -148,8 +159,9 @@
     background-color: transparent;
     top: -75px;
     width: 100%;
+    padding-top: 18px;
     padding-left: 30px;
-    padding-right: 37px;
+    padding-right: 35px;
   }
 
   @media (min-width: @desktop-width) {

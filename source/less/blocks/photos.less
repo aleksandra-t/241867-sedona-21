@@ -105,6 +105,7 @@
     width: 100%;
     bottom: 0;
     color: @color-main-second;
+    padding-left: 22px;
   }
 }
 
@@ -116,6 +117,27 @@
 
 .photos__picture {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.photos__item--big .photos__picture {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .photos__title {
