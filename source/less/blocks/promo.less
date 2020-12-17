@@ -2,18 +2,29 @@
   background-image: url("../../img/intro-triangle.svg"),
     url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 100%, 48% 100%;
   background-color: @bg-color-first;
   padding-top: 52px;
   padding-bottom: 58px;
   background-size: 901px auto, 900px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/intro-triangle.svg"),
+      url("../../img/back-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/intro-triangle.svg"),
       url("../../img/back-desktop.jpg");
     padding-top: 95px;
     padding-bottom: 107px;
+    background-position: 50% 100%;
     background-size: 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-triangle.svg"),
+        url("../../img/back-desktop@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -25,11 +36,23 @@
 
 .promo--index-page {
   padding-top: 89px;
-  padding-bottom: 76px;
+  padding-bottom: 79px;
   background-size: 1200px, cover;
 
   @media (min-width: @tablet-width) {
-    padding-top: 76px;
-    padding-bottom: 85px;
+    padding-top: 77px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-bottom: 81px;
+  }
+}
+
+.promo--index-page .promo__image {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
   }
 }
