@@ -1,5 +1,6 @@
 .map {
   position: relative;
+  min-height: 350px;
 }
 
 .map__image {
@@ -7,13 +8,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
 }
 
-.map__image--interactive {
+.map__interactive {
+  position: relative;
   display: block;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 350px;
 }
