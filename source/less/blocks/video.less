@@ -174,27 +174,25 @@
   cursor: pointer;
   outline: none;
   z-index: 1;
+  fill: #5C6870;
 
-  &:hover path {
+  &:hover {
     fill: @bg-color-input-checked;
   }
 
-  &:active path {
+  &:active {
     fill: @bg-color-input-checked-active;
   }
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
+    fill: rgb(255, 255, 255);
 
-    path {
-      fill: rgb(255, 255, 255);
-    }
-
-    &:hover path {
+    &:hover {
       fill: rgba(255, 255, 255, 0.6);
     }
 
-    &:active path {
+    &:active {
       fill: rgba(255, 255, 255, 0.3);
     }
   }
