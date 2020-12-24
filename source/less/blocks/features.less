@@ -13,20 +13,14 @@
 .features__slogan {
   color: @color-title;
   .font(18px; 700; 28px);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 28px;
-
-  br {
-    display: none;
-  }
+  max-width: 270px;
 
   @media (min-width: @tablet-width) {
     .font(21px; 700; 28px);
-
-    br {
-      display: block;
-    }
+    max-width: 610px;
   }
 }
 
@@ -159,6 +153,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 13px;
+    max-width: 210px;
   }
 }
 
