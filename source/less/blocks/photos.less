@@ -14,21 +14,14 @@
 }
 
 .photos__description {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 32px;
   .font(@line-height: 24px);
 
-  .photos__description-br {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     margin-bottom: 78px;
+    max-width: 440px;
   }
 
   @media (min-width: @desktop-width) {

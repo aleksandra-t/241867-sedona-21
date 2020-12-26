@@ -106,32 +106,38 @@
 }
 
 .advices__description {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 27px;
   .font(@line-height: 21px);
 
-  .advices__br {
-    display: none;
+  @media (min-width: @desktop-width) {
+    max-width: 285px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
+.advices__item--living .advices__description {
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    max-width: 190px;
+  }
+}
 
-    &--tablet {
-      display: none;
+.advices__item--souvenirs .advices__description {
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    max-width: 195px;
+  }
+}
 
-      @media (min-width: @tablet-width) and (max-width: 1199px) {
-        display: block;
-      }
-    }
+.advices__item--food .advices__description {
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    max-width: 155px;
+  }
+}
 
-    &--desktop {
-      display: none;
+.advices__br {
+  display: none;
 
-      @media (min-width: @desktop-width) {
-        display: block;
-      }
-    }
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
