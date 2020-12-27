@@ -13,20 +13,14 @@
 .features__slogan {
   color: @color-title;
   .font(18px; 700; 28px);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 28px;
-
-  br {
-    display: none;
-  }
+  max-width: 270px;
 
   @media (min-width: @tablet-width) {
     .font(21px; 700; 28px);
-
-    br {
-      display: block;
-    }
+    max-width: 610px;
   }
 }
 
@@ -141,10 +135,6 @@
   }
 }
 
-.features__item-text--background-first .features__item-title {
-  color: @color-main-second;
-}
-
 .features__item-title {
   margin: 0 auto;
   padding: 0;
@@ -162,10 +152,42 @@
   }
 }
 
+.features__item-text--background-first .features__item-title {
+  color: @color-main-second;
+
+  @media (min-width: @tablet-width) {
+    max-width: 200px;
+  }
+}
+
+.features__item--background-second .features__item-title {
+  @media (min-width: @tablet-width) {
+    max-width: 150px;
+  }
+}
+
 .features__item--background-second .features__item-description {
+  @media (min-width: @tablet-width) {
+    max-width: 180px;
+  }
+
   @media (max-width: @mobile-width-only) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 290px;
+  }
+}
+
+.features__item--background-second:nth-of-type(4) .features__item-description {
+  @media (min-width: @tablet-width) {
+    max-width: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 270px;
   }
 }
 
@@ -185,6 +207,22 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 20px;
+  }
+}
+
+.features__item--background-first:first-of-type .features__item-description {
+  @media (min-width: @desktop-width) {
+    max-width: 290px;
+  }
+}
+
+.features__item--background-first:nth-of-type(2) .features__item-description {
+  @media (min-width: @tablet-width) {
+    max-width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 230px;
   }
 }
 
@@ -220,22 +258,6 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
-  }
-}
-
-.features__br--tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: block;
-  }
-}
-
-.features__br--desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
     display: block;
   }
 }
