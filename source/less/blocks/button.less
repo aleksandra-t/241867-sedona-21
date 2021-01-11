@@ -9,7 +9,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 17px 0 16px 0;
+  padding: 17px 10px 16px 10px;
   margin: 0 auto;
   vertical-align: middle;
 
@@ -20,6 +20,10 @@
   &:active {
     background-color: @bg-color-button-active;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: 2px solid black;
   }
 
   &:disabled {

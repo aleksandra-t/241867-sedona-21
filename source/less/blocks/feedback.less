@@ -342,12 +342,21 @@
   }
 }
 
-.feedback__item--impression .feedback__text--radio:hover::before {
+.feedback__item--impression .feedback__text--radio:hover::before,
+.feedback__item--sightseeng .feedback__text--checkbox:hover::before {
   background-color: @bg-color-input-hover;
 }
 
-.feedback__item--impression .feedback__text--radio:active::before {
+.feedback__item--impression .feedback__text--radio:active::before,
+.feedback__item--sightseeng .feedback__text--checkbox:active::before,
+.feedback__item--impression .feedback__input--radio:focus + .feedback__text--radio::before,
+.feedback__item--sightseeng .feedback__input--checkbox:focus + .feedback__text--checkbox::before {
   background-color: @bg-color-input-active;
+}
+
+.feedback__item--impression .feedback__input--radio:disabled + .feedback__text--radio::before,
+.feedback__item--sightseeng .feedback__input--checkbox:disabled + .feedback__text--checkbox::before {
+  opacity: 0.3;
 }
 
 .feedback__input--radio:checked + .feedback__text--radio::after {
